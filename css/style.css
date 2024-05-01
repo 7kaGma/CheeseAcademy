@@ -1,0 +1,388 @@
+@charset "UTF-8";
+
+/* ==========
+枠と見出しの設定
+========== */
+.contents-container {
+  box-sizing: border-box;
+  padding-inline: 120px;
+  padding-block: 60px;
+  width: 100%;
+}
+.heading-text {
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-block-end: 60px;
+}
+
+.heading-text h2{
+  font-weight: bold;
+}
+.heading-text p {
+  font-size: 1.8rem;
+  margin-block-start: 30px;
+}
+.heading{
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  margin-block-end: 30px;
+}
+
+/* ==========
+ボタンの設定
+========== */
+.form .cvbtn{
+  margin-inline: auto;
+  margin-block-start: 30px;
+  width: 200px;
+}
+.more-btn{
+  margin: 0 auto 0;
+  width: 200px;
+  background-color: white;
+  border: #bfbfbf 2px solid;
+}
+.more-btn.active{
+  background-color:#e9e8e8 ;
+  border: none;
+}
+
+
+
+/*==========
+Hero
+==========*/
+.hero{
+  width: 100%;
+  background-image: url(../img/mainbg.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.hero__shadow{
+  position: relative;
+  width: 100%;
+  aspect-ratio: 5/2;
+  background-color: rgba(0, 0,0, 0.1);
+}
+.hero__text{
+  width: 80%;
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  line-height: 2.0;
+  text-shadow: 0 0 10px black;
+  text-align: center;
+
+}
+.hero__text p:nth-of-type(1){
+  font-size: 30px;
+}
+.hero__text p:nth-of-type(2){
+  font-size: 20px;
+}
+
+/*==========
+About
+==========*/
+.about{
+  text-align: center;
+  background-color: #fafafa;
+}
+.about h2{
+  color:#ffd61a;
+}
+.about p:nth-of-type(1){
+  margin-block-end: 40px;
+}
+.about p:nth-of-type(2){
+  margin-block-end: 40px;
+}
+.about p:nth-of-type(3){
+  margin-block-end: 40px;
+}
+.about p:nth-of-type(4){
+  margin-block-end: 40px;
+}
+/*slider*/
+.slick-slider{
+  margin-block-start: 80px;
+}
+.slick-slide{
+  margin: 0 10px 0;
+}
+.about__image div img{
+  margin: 0 auto;
+  width: 100%;
+}
+/*==========
+Course
+==========*/
+.course{
+  text-align: center;
+}
+
+
+.course p{
+  font-size: 1.6rem;
+}
+
+.course-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color:#fafafa;
+  text-align: start;
+}
+
+.reverse-container{
+  flex-direction: row-reverse;
+}
+
+.course__img{
+  width: 50%;
+}
+
+.course__img img{
+  width: 100%;
+  display: block;
+}
+
+.course__text{
+  box-sizing: border-box;
+  width: 40%;
+}
+.course__text h3{
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin-block-end: 40px;
+}
+.course__text1{
+  padding-inline-start: 50px;
+}
+.course__text2{
+  padding-inline-end: 50px;
+}
+.course__text3{
+  padding-inline-start: 50px;
+}
+
+/*==========
+News
+==========*/
+.news h2{
+  color: #ffd61a;
+  font-weight: bold;
+}
+.news-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  box-sizing: border-box;
+  margin-block-end: 30px;
+}
+
+.news-topic{
+  width: 300px;
+  height: 350px;
+}
+
+.news-topic div{
+  height: 50%;
+  font-size: 1.4rem;
+  line-height: 2.0;
+}
+.news-topic div span{
+  display: block;
+}
+.news-hide{
+  display: none;
+}
+.news-hide.active{
+  display: flex;
+}
+/*==========
+Access
+==========*/
+.access{
+  padding-block-end:60px ;
+  background-color: #fafafa;
+}
+.access iframe{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 50%;
+  max-width: 1440px;
+}
+.access__text{
+  margin-block-start: 60px;
+  margin-inline: auto;
+  display: grid;
+  width: 500px;
+  grid-template-columns: 25% 75%;
+  grid-template-rows:1fr 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.heading p{
+  font-size: 18px;
+}
+/* ==========
+form
+========== */
+.form-eplain{
+  margin-block-end: 70px;
+  text-align: center;
+}
+.form-eplain p:nth-of-type(1){
+  margin-block-end: 30px;
+}
+.form__format-container{
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: max-content ;
+  width: 640px;
+  margin: 0 auto;
+}
+.form__format-container div{
+  box-sizing: border-box;
+padding-block: 8px;
+line-height: 1.5;
+}
+.form__format-container div:nth-of-type(2n){
+  border-left: 2px solid #bfbfbf;
+  border-top: 2px solid #bfbfbf;
+  padding-inline-start: 8px;
+}
+.form__format-container div:nth-of-type(2n+1){
+  border-top: 2px solid #bfbfbf;
+  padding-inline: 16px 64px;
+}
+.form__format-container div:nth-of-type(n+9){
+  border-bottom: 2px solid #bfbfbf;
+}
+.form__format-container input[type=checkbox]{
+  margin-right: 10px;
+}
+.form__format-container li{
+  margin-block:24px;
+}
+.form__format-container div:nth-of-type(8) {
+  display: flex;
+  align-items: center;
+}
+
+.form__format-container div input[type=text]{
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.form__format-container div select{
+  width: 80%;
+  box-sizing: border-box;
+}
+
+/*==========
+SP
+==========*/
+@media(max-width:1024px){
+  br{
+    display:none;
+  }
+  .contents-container{
+    padding:60px 20px;
+    text-align: left;
+  }
+  .heading-text {
+    text-align: left;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-block-end: 60px;
+  }
+  
+  .heading-text h2{
+    font-weight: bold;
+  }
+  .heading-text p {
+    font-size: 1.6rem;
+    margin-block-start: 20px;
+  }
+  .heading{
+    text-align: center;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    margin-block-end: 30px;
+  }
+  .hero__shadow{
+    aspect-ratio: 3/4;
+  }
+  .hero__text span{
+    display: block;
+  }
+  .hero__text p:nth-of-type(2){
+    margin-block-start: 20px;
+    font-size: 1.8rem;
+  }
+  .news-container{
+    flex-direction: column;
+  }
+  .course-container{
+    margin-block-end: 60px;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .heading{
+    text-align: left;
+  }
+  .course p{
+    font-size: 1.4rem;
+  }
+  .course__img{
+    width: 100%;
+    margin-inline: 20px;
+  }
+  .course__img{
+    width: auto;
+  }
+  .course__text{
+    padding:30px 20px 0;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+  .access__text{
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 20px;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .form-eplain{
+    text-align: left;
+  }
+  .form__format-container{
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
+  .form__format-container div:nth-of-type(n){
+    border: none;
+  }
+  .form__format-container div:nth-of-type(2n+1){
+    padding-inline:0;
+  }
+  .form__format-container div:nth-of-type(2n){
+    padding-inline:0;
+  }
+    .form__format-container div input[type=text]{
+      width: 100%
+    } 
+    .form__format-container div select{
+      width: 100%;
+
+    }
+}
